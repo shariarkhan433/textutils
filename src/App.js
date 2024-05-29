@@ -1,6 +1,7 @@
 import './App.css';
+import About from './components/About';
 import Navbar from './components/Navbar';
-import TextForm from './components/TextForm';
+// import TextForm from './components/TextForm';
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
 {/* <Navbar title="React-app"/> */}
     <Navbar title='Text Utility'></Navbar>
     <div className="container my-3">
-    <TextForm headings="Enter the text to analyze"></TextForm>
+    {/* <TextForm headings="Enter the text to analyze"></TextForm> */}
     </div>
+    <About></About>
     </>
   );
 }
