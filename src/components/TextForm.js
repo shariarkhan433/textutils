@@ -27,13 +27,14 @@ export default function TextForm(props) {
     let wordcount = text.split(" ").length
     return (
         <>
-            <div className="container">
+            <div className="container" style={{color: props.mode === 'dark' ? 'white' : 'black'}}>
                 <h1>{props.headings}</h1>
                 <div className="mb-3">
                     <textarea
                         className="form-control"
                         value={text}
-                        onChange={handleOnChange}
+                        onChange={handleOnChange} style={{backgroundColor: props.mode === 'dark' ? 'grey' : 'white',
+                         color: props.mode === 'dark' ? 'white' : 'black'}}
                         id="mybox"
                         rows="5"
                     ></textarea>
@@ -46,10 +47,11 @@ export default function TextForm(props) {
             </div>
 
 
-            <div className="container my-3">
+            <div className="container my-3" style={{color: props.mode === 'dark' ? 'white' : 'black'}}>
                 <h1>Your text summary</h1>
                 <p>{wordcount} words, {text.length} character</p>
                 <p>It would take {wordcount * 0.008} minutes to read</p>
+                <p>{text.length>0?}</p>
             </div>
         </>
     );
