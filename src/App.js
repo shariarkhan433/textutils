@@ -5,7 +5,10 @@ import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
 
-
+import {
+  Route,
+  Routes,
+} from "react-router-dom";
 
 function App() {
   const[mode,setmode] = useState("light"); //by default it is light mode
@@ -45,8 +48,12 @@ function App() {
     <Navbar title='Text Utility' mode={mode} togglemode={toggleMode}></Navbar>
     <Alert alert={alert}/>
     <div className="container my-3">
-          <TextForm shootAlert={shootAlert} headings="Enter the text to analyze" mode={mode}></TextForm>
-          <About></About>
+      <Routes>
+        <Route path='/' element={<TextForm shootAlert={shootAlert} headings="Enter the text to analyze" mode={mode}></TextForm>}>
+          </Route>
+          <Route path='/about' element={<About/>}>
+          </Route>
+          </Routes>
     </div>
    
     </>
