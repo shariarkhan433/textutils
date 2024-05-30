@@ -3,6 +3,15 @@ import PropTypes from 'prop-types'
 
 
 export default function Navbar(props) {
+  const scrollText = () => {
+    let t
+    if (props.mode === 'light') {
+      t = "dark"
+    } else {
+      t = "light"
+    }
+    return t;
+  }
   return (
     <div>
       <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} `}>
@@ -40,7 +49,7 @@ export default function Navbar(props) {
       </form> */}
             <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
               <input className="form-check-input" onClick={props.togglemode} type="checkbox" id="flexSwitchCheckDefault" />
-              <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Switch {props.mode} mode</label>
+              <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Switch {scrollText()} mode</label>
             </div>
           </div>
         </div>
