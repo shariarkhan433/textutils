@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shariarkhan433/textutils/tree/hosting-temp/static/css/main.f855e6bc.css",
+    "main.js": "/shariarkhan433/textutils/tree/hosting-temp/static/js/main.376c5d29.js",
+    "static/js/453.02b6ed6f.chunk.js": "/shariarkhan433/textutils/tree/hosting-temp/static/js/453.02b6ed6f.chunk.js",
+    "index.html": "/shariarkhan433/textutils/tree/hosting-temp/index.html",
+    "main.f855e6bc.css.map": "/shariarkhan433/textutils/tree/hosting-temp/static/css/main.f855e6bc.css.map",
+    "main.376c5d29.js.map": "/shariarkhan433/textutils/tree/hosting-temp/static/js/main.376c5d29.js.map",
+    "453.02b6ed6f.chunk.js.map": "/shariarkhan433/textutils/tree/hosting-temp/static/js/453.02b6ed6f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.376c5d29.js"
+  ]
+}
